@@ -15,6 +15,7 @@ Generated from `00-MASTER-CHECKLIST.md` by `scripts/generate-evidence-report.mjs
 | Policy launch gate | `POLICY-LAUNCH-GATE.md`; public issue #3 | Placeholder policy/contact/legal blockers identified for real launch | 2026-06-15 |
 | Repo collateral completeness | `repo/LICENSE`; `repo/.github/ISSUE_TEMPLATE/`; public `launch-context/repo/` | Exact Apache-2.0 license text and repo collateral are present in the auditable launch context | 2026-06-15 |
 | Social preview image | `assets/og-launchframe.jpg`; public repo commit `f6c194f` | 1200x630 OG image generated and deployed in site metadata | 2026-06-15 |
+| CI and package badges | Public repo commit `c1ddcc4`; GitHub Actions run `27578087090`; `repo/README.md` | Launch context CI passed; README includes CI and npm version badges | 2026-06-15 |
 
 ## Open External Waits
 

@@ -29,6 +29,7 @@ const requiredFiles = [
   'repo/.github/ISSUE_TEMPLATE/bug_report.yml',
   'repo/.github/ISSUE_TEMPLATE/feature_request.yml',
   'repo/.github/ISSUE_TEMPLATE/question.yml',
+  'repo/.github/workflows/launch-context.yml',
   'repo/docs/TELEMETRY.md',
 ];
 
@@ -122,6 +123,16 @@ for (const needle of ['Apache License', 'Version 2.0, January 2004', 'TERMS AND 
 const licenseSelector = readText('repo/LICENSE.SELECTOR.md');
 if (!licenseSelector.includes('- [x] Exact upstream license text copied before any real public repo launch.')) {
   failures.push('repo/LICENSE.SELECTOR.md does not mark exact license text as copied');
+}
+
+const repoReadme = readText('repo/README.md');
+for (const needle of ['actions/workflows/launch-context.yml/badge.svg', 'img.shields.io/npm/v/launchframe-dress-rehearsal']) {
+  if (!repoReadme.includes(needle)) failures.push(`repo/README.md missing badge: ${needle}`);
+}
+
+const workflow = readText('repo/.github/workflows/launch-context.yml');
+for (const needle of ['FORCE_JAVASCRIPT_ACTIONS_TO_NODE24', 'generate-evidence-report.mjs', 'validate-launch-context.mjs']) {
+  if (!workflow.includes(needle)) failures.push(`launch context workflow missing expected command/config: ${needle}`);
 }
 
 const security = readText('repo/SECURITY.md');

@@ -68,8 +68,8 @@ External publishing is intentionally not executed.
 - [x] CODE_OF_CONDUCT.md.
 - [x] Issue templates copied into rehearsal repo.
 - [x] Good first issues listed in CONTRIBUTING.
-- [ ] CI badge, skipped for dry run.
-- [ ] Package/version badge, skipped for dry run.
+- [x] CI badge added to repo README; workflow run `27578087090` passed on public commit `c1ddcc4`.
+- [x] Package/version badge added to repo README for `launchframe-dress-rehearsal`.
 - [x] Social preview image generated at `assets/og-launchframe.jpg`.
 - [x] Privacy/telemetry stance for practice artifact recorded in `00-org-context.json`.
 - [x] Privacy policy.
@@ -79,7 +79,9 @@ External publishing is intentionally not executed.
 
 ## Core Claim CI
 
-No CI proof exists yet. A future public Launchframe repo should prove at least:
+CI proof for the rehearsal repo exists in `.github/workflows/launch-context.yml`.
+
+A future production Launchframe repo should prove product behavior as well:
 
 ```sh
 # Example future checks
