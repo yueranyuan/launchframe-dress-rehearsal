@@ -8,6 +8,8 @@
   <meta property="og:title" content="Launchframe - Open-source launch cockpit">
   <meta property="og:description" content="Coordinate Show HN and Reddit launches with a single, precise dossier.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yueranyuan.github.io/launchframe-dress-rehearsal/">
+  <link rel="canonical" href="https://yueranyuan.github.io/launchframe-dress-rehearsal/">
   <style>
     :root {
       --paper: #f4efe3;
@@ -1241,7 +1243,7 @@
           <a href="#problem">Problem</a>
           <a href="#surfaces">Surfaces</a>
           <a href="#workflow">Workflow</a>
-          <a class="nav-cta" href="#start">Start Launching</a>
+          <a class="nav-cta" href="https://github.com/yueranyuan/launchframe-dress-rehearsal">View Repo</a>
         </nav>
       </div>
     </header>
@@ -1253,7 +1255,7 @@
           <h1 id="hero-title">Your open-source launch cockpit.</h1>
           <p class="copy">Coordinate Show HN &amp; Reddit releases with a single, precise dossier.</p>
           <div class="actions">
-            <a class="button primary" href="#start">Start Launching</a>
+            <a class="button primary" href="https://github.com/yueranyuan/launchframe-dress-rehearsal">View on GitHub</a>
           </div>
         </div>
 
@@ -1304,8 +1306,8 @@ export default {
   name: "Launchframe",
   version: "1.0.0",
   checks: {
-    npm: true,
-    domain: "verified",
+    npm: "2fa-gated",
+    domain: "pages-live",
   },
 };</pre></div>
             </article>
@@ -1335,7 +1337,7 @@ post drafted. ID: sh_12345
               </div>
             </article>
             
-            <div class="status-box" style="position:absolute; left:380px; top: 290px; width: 130px; border:1px solid var(--line); background:rgba(244,239,227,.9); padding:6px 10px; font-size:10px; font-family:var(--mono); font-weight:800; line-height:1.4; z-index:2; border-radius:4px; box-shadow: 3px 3px 0 rgba(48,38,30,.06);">domain: verified<br>npm publish: ready<br>show_hn: drafted</div>
+            <div class="status-box" style="position:absolute; left:380px; top: 290px; width: 130px; border:1px solid var(--line); background:rgba(244,239,227,.9); padding:6px 10px; font-size:10px; font-family:var(--mono); font-weight:800; line-height:1.4; z-index:2; border-radius:4px; box-shadow: 3px 3px 0 rgba(48,38,30,.06);">pages: live<br>npm: 2fa gate<br>show_hn: drafted</div>
 
             <article class="window launch-window">
               <div class="window-bar">LAUNCH DAY</div>
@@ -1394,9 +1396,9 @@ post drafted. ID: sh_12345
           <p class="copy">Connect and control every aspect of your launch.</p>
         </div>
         <div class="surface-grid">
-          <article class="surface-card"><h3>GitHub</h3><div class="surface-icon"><img src="assets/logos/github.svg" alt="GitHub" style="width:34px;height:34px;opacity:0.85;"></div><span class="surface-tag">REPO READINESS</span><p>Codebase<br>Status: Verified<br><u>See Details</u></p></article>
-          <article class="surface-card"><h3>npm</h3><div class="surface-icon"><img src="assets/logos/npm.svg" alt="npm" style="width:34px;height:34px;opacity:0.85;"></div><span class="surface-tag">NPM PUBLISH</span><p>Package<br>Status: Ready<br><u>See Details</u></p></article>
-          <article class="surface-card"><h3>Domain</h3><div class="surface-icon"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="14"></circle><path d="M10 24h28M24 10c5 4 7 9 7 14s-2 10-7 14M24 10c-5 4-7 9-7 14s2 10 7 14"></path></svg></div><span class="surface-tag">DOMAIN STATUS</span><p>Registry:<br>Verified<br><u>See Details</u></p></article>
+          <article class="surface-card"><h3>GitHub</h3><div class="surface-icon"><img src="assets/logos/github.svg" alt="GitHub" style="width:34px;height:34px;opacity:0.85;"></div><span class="surface-tag">REPO READINESS</span><p>Codebase<br>Status: Live<br><u>See Details</u></p></article>
+          <article class="surface-card"><h3>npm</h3><div class="surface-icon"><img src="assets/logos/npm.svg" alt="npm" style="width:34px;height:34px;opacity:0.85;"></div><span class="surface-tag">NPM PUBLISH</span><p>Package<br>2FA gate<br><u>See Details</u></p></article>
+          <article class="surface-card"><h3>Domain</h3><div class="surface-icon"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="14"></circle><path d="M10 24h28M24 10c5 4 7 9 7 14s-2 10-7 14M24 10c-5 4-7 9-7 14s2 10 7 14"></path></svg></div><span class="surface-tag">DOMAIN STATUS</span><p>GitHub Pages<br>Live<br><u>See Details</u></p></article>
           <article class="surface-card"><h3>HN</h3><div class="surface-icon"><img src="assets/logos/hn.svg" alt="Hacker News" style="width:34px;height:34px;opacity:0.85;"></div><span class="surface-tag">HN POST</span><p>Show HN<br>drafted<br><u>See Details</u></p></article>
           <article class="surface-card"><h3>Reddit</h3><div class="surface-icon"><img src="assets/logos/reddit.svg" alt="Reddit" style="width:34px;height:34px;opacity:0.85;"></div><span class="surface-tag">REDDIT SUB</span><p>Subreddit<br>drafted<br><u>See Details</u></p></article>
           <article class="surface-card"><h3>Demo</h3><div class="surface-icon"><svg viewBox="0 0 48 48"><rect x="10" y="12" width="28" height="20" rx="2"></rect><path d="M20 18l9 4-9 4z"></path><path d="M18 38h12M24 32v6"></path></svg></div><span class="surface-tag">DEMO ASSET</span><p>Assets<br>ready<br><u>See Details</u></p></article>
@@ -1427,10 +1429,10 @@ post drafted. ID: sh_12345
             <p class="copy">Your release dossier is verified and pre-flighted. Take command.</p>
           </div>
           <div class="cta-actions">
-            <a class="button primary" href="#surfaces">Take Control</a>
+            <a class="button primary" href="https://github.com/yueranyuan/launchframe-dress-rehearsal">Take Control</a>
             <div class="link-stack">
-              <a class="install-line" href="#workflow"><span>[>_] Install CLI</span><span>(docs)</span></a>
-              <a class="install-line" href="#surfaces"><span>(gh) Or view on GitHub</span><span></span></a>
+              <a class="install-line" href="https://www.npmjs.com/package/launchframe-dress-rehearsal"><span>[>_] npm package</span><span>(2FA gate)</span></a>
+              <a class="install-line" href="https://github.com/yueranyuan/launchframe-dress-rehearsal"><span>(gh) View on GitHub</span><span></span></a>
             </div>
           </div>
         </div>
@@ -1441,22 +1443,22 @@ post drafted. ID: sh_12345
       <section class="footer-group" aria-labelledby="footer-resources">
         <h2 class="footer-heading" id="footer-resources">Resources</h2>
         <ul class="footer-links-list">
-          <li><a href="#workflow">Documentation</a></li>
-          <li><a href="#problem">Security</a></li>
+          <li><a href="https://github.com/yueranyuan/launchframe-dress-rehearsal">Documentation</a></li>
+          <li><a href="https://github.com/yueranyuan/launchframe-dress-rehearsal/blob/main/repo/SECURITY.md">Security</a></li>
         </ul>
       </section>
       <section class="footer-group" aria-labelledby="footer-community">
         <h2 class="footer-heading" id="footer-community">Community</h2>
         <ul class="footer-links-list">
-          <li><a href="#surfaces">Contribute</a></li>
-          <li><a href="#surfaces">Issue Tracker</a></li>
+          <li><a href="https://github.com/yueranyuan/launchframe-dress-rehearsal/blob/main/repo/CONTRIBUTING.md">Contribute</a></li>
+          <li><a href="https://github.com/yueranyuan/launchframe-dress-rehearsal/issues">Issue Tracker</a></li>
         </ul>
       </section>
       <section class="footer-group" aria-labelledby="footer-project">
         <h2 class="footer-heading" id="footer-project">Project</h2>
         <ul class="footer-links-list">
-          <li><a href="#top">Changelog</a></li>
-          <li><a href="#top">License</a></li>
+          <li><a href="https://github.com/yueranyuan/launchframe-dress-rehearsal/commits/main/">Changelog</a></li>
+          <li><a href="https://github.com/yueranyuan/launchframe-dress-rehearsal/blob/main/repo/LICENSE.SELECTOR.md">License</a></li>
         </ul>
       </section>
     </footer>
