@@ -6,7 +6,7 @@ Status: dress rehearsal.
 
 - Product: Launchframe
 - Rehearsal repo URL: `https://github.com/yueranyuan/launchframe-dress-rehearsal`
-- Copyright holder: Launchframe Rehearsal Project
+- Copyright holder: Volter AI, Inc.
 - Year: 2026
 - Chosen license: Apache-2.0
 - Approved by: workspace owner for rehearsal only

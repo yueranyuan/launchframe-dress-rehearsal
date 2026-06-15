@@ -8,13 +8,13 @@
     "approval_required_before_publish": true
   },
   "organization": {
-    "legal_name": "Launchframe Rehearsal Project",
+    "legal_name": "Volter AI, Inc.",
     "public_name": "Launchframe",
     "website": "https://launchframe.site/",
-    "support_email": "support@example.com",
-    "security_email": "security@example.com",
-    "privacy_email": "privacy@example.com",
-    "terms_email": "legal@example.com",
+    "support_email": "TBD monitored support address",
+    "security_email": "TBD monitored security address",
+    "privacy_email": "TBD monitored privacy address",
+    "terms_email": "TBD monitored legal address",
     "mailing_address": null,
     "jurisdiction": null
   },

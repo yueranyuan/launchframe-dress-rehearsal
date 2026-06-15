@@ -18,8 +18,8 @@ Mode: completed real dress rehearsal with HTTPS enforcement included. GitHub rep
 | GitHub repo metadata | `https://launchframe.site/` | Homepage metadata uses the enforced HTTPS custom domain |
 | Signed-in browser control | Repo-local browser skill with signed-in Chrome profile | Verified through `.claude/skills/browser`; isolated automation browser rejected |
 | Discord | `https://discord.gg/example` | Safe placeholder |
-| Support | `support@example.com` | Safe placeholder |
-| Security | `security@example.com` | Safe placeholder |
+| Support | `TBD monitored support address` | Placeholder; real monitored address still required before production launch |
+| Security | `TBD monitored security address` | Placeholder; real monitored address still required before production launch |
 | License | Apache-2.0 | Rehearsal decision |
 
 ## Gate Results
@@ -66,7 +66,7 @@ These are not blockers for the dress rehearsal, but they are blockers for a real
 - Decide whether to keep the public rehearsal repo or delete/archive it.
 - Decide whether to keep, narrow, or revoke the rehearsal npm publish credential after no further rehearsals need it.
 - Keep signed-in browser control verified before creating publish credentials, touching registrar checkout, or changing hosting/account settings in a browser.
-- Replace example.com contacts with monitored real addresses.
+- Replace TBD monitored-contact placeholders with owner-approved monitored real addresses.
 - Review privacy and terms language before publishing.
 - Generate real OG/social assets for the production URL.
 - Run a final data scrub before any public repo or package publish.

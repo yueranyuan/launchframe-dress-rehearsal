@@ -12,7 +12,7 @@ Status: dress rehearsal.
 
 Please report security vulnerabilities to:
 
-- Email: `security@example.com`
+- Email: `TBD monitored security address`
 - Advisory URL: `https://github.com/yueranyuan/launchframe-dress-rehearsal/security/advisories`
 
 Do not open a public GitHub issue for a suspected vulnerability.

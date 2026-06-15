@@ -6,14 +6,14 @@ Status: rehearsal artifact. This identifies policy placeholders that block a rea
 
 | Area | Placeholder / gap | Required resolution |
 |---|---|---|
-| Contacts | `support@example.com`, `security@example.com`, `privacy@example.com`, `legal@example.com`, `conduct@example.com` | Replace with monitored real addresses or remove the surface. |
+| Contacts | `TBD monitored support address`, `TBD monitored security address`, `TBD monitored privacy address`, `TBD monitored legal address`, `TBD monitored conduct address` | Replace with monitored real addresses or remove the surface. |
 | Terms | `TBD before real launch` disclaimer and liability sections | Owner/legal-approved terms or explicit decision not to publish terms. |
-| Code of conduct | Rehearsal enforcement contact | Use official Contributor Covenant text and a real enforcement contact before advertising a community. |
+| Code of conduct | `TBD monitored conduct address` | Use official Contributor Covenant text and a real enforcement contact before advertising a community. |
 | Privacy | Rehearsal says no hosted service, accounts, telemetry, or payments | Reverify against production code, analytics, hosting logs, package behavior, support flow, and any community tooling. |
 | Telemetry | Rehearsal says no telemetry and no analytics | Reverify with source search, deployed site review, package behavior, and network checks. |
 | Security | Rehearsal advisory URL and contact exist, but contact is a placeholder | Replace contact and verify GitHub Security Advisories are enabled for the production repo. |
 | Community | Discord/linkedin/social links are rehearsal placeholders | Create real community surfaces and enforcement paths, or remove community claims. |
-| Jurisdiction/entity | Operator is `Launchframe Rehearsal Project`; jurisdiction and mailing address are unset | Fill real operator/legal entity details if publishing legal terms or privacy commitments. |
+| Jurisdiction/mailing address | Operator is `Volter AI, Inc.`; jurisdiction and mailing address are unset | Fill jurisdiction and mailing address if publishing legal terms or privacy commitments that require them. |
 
 ## Resolved During Rehearsal
 

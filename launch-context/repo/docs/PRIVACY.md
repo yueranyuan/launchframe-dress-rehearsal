@@ -9,8 +9,8 @@ This policy explains how Launchframe handles information during the dress rehear
 ## Summary
 
 - Product: Launchframe
-- Operator: Launchframe Rehearsal Project
-- Contact: `privacy@example.com`
+- Operator: Volter AI, Inc.
+- Contact: `TBD monitored privacy address`
 - Website: `https://launchframe.site/`
 - Repository: `https://github.com/yueranyuan/launchframe-dress-rehearsal`
 - Hosted service involved? No
@@ -53,7 +53,7 @@ We do not share rehearsal user information with subprocessors because no hosted 
 
 - Disable telemetry: not applicable; telemetry is not present.
 - Delete account/data: not applicable; accounts are not present.
-- Contact: `privacy@example.com`
+- Contact: `TBD monitored privacy address`
 
 ## Changes
 

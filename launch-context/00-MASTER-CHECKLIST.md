@@ -31,7 +31,7 @@
 | Website hosting | required | GitHub Pages | Static site; Vercel token path was not needed | Live over HTTPS |
 | Custom domain | required for rehearsal | Name.com: `launchframe.site` | Exercises real purchase/DNS flow | Registered and routed |
 | HTTPS | required before real public launch | GitHub Pages certificate | Public site should be HTTPS | Enforced |
-| Support/security email | out of scope for rehearsal | `example.com` placeholders | No real support surface advertised | Deferred |
+| Support/security email | out of scope for rehearsal | TBD monitored-contact placeholders | No real support surface advertised | Deferred |
 | Social/community | out of scope for rehearsal | Safe placeholders/drafts only | No public posting in dress rehearsal | Deferred |
 | Analytics | out of scope | none | Static rehearsal does not need metrics | Deferred |
 | Vercel | out of scope | none | GitHub Pages is chosen host | Not a blocker |
@@ -101,8 +101,8 @@ This is the first step for every new product workspace. Fill this before strateg
 - 🟢 Discord server: `https://discord.gg/example` (safe placeholder)
 - 🟢 Slack/community links: not used in rehearsal
 - 🟢 Newsletter/blog/dev.to/Lobsters/HN account: dry-run only
-- 🟢 Support/contact email: `support@example.com`
-- 🟢 Security contact: `security@example.com`
+- 🟡 Support/contact email: `TBD monitored support address`
+- 🟡 Security contact: `TBD monitored security address`
 - 🟢 Account-console browser capability: signed-in controllable browser verified through `.claude/skills/browser`
 - 🟢 Browser automation method: use `.claude/skills/browser/SKILL.md` only; it starts a named eval-server session against the configured signed-in Chrome profile
 - 🟢 Browser account verification: signed-in browser path verified for npm account-console work
@@ -209,7 +209,7 @@ Rule: this launch workspace may draft and review launch collateral, but the prod
 - 🟢 GitHub release/tag plan: prerelease `v0.0.0-dress-rehearsal.0` created
 - 🟢 Social handles checked: dry-run targets selected
 - 🟢 Discord/community surface created or explicitly deferred: safe placeholder selected
-- 🟢 Support/security email configured: example.com placeholders selected
+- 🟡 Support/security email configured: real monitored addresses still need owner approval before production publication
 
 ## 6. Policy And OSS Trust Gate
 

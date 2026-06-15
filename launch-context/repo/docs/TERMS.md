@@ -9,8 +9,8 @@ These terms describe the intended public terms shape for Launchframe. They are n
 ## Parties
 
 - Product: Launchframe
-- Operator: Launchframe Rehearsal Project
-- Contact: `legal@example.com`
+- Operator: Volter AI, Inc.
+- Contact: `TBD monitored legal address`
 - Website: `https://launchframe.site/`
 - Repository: `https://github.com/yueranyuan/launchframe-dress-rehearsal`
 
@@ -54,6 +54,6 @@ For a real public launch, these terms must be reviewed and updated to match the 
 
 ## Contact
 
-- Terms contact: `legal@example.com`
-- Security contact: `security@example.com`
-- Community contact: `conduct@example.com`
+- Terms contact: `TBD monitored legal address`
+- Security contact: `TBD monitored security address`
+- Community contact: `TBD monitored conduct address`

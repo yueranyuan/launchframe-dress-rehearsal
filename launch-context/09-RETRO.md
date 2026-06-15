@@ -34,7 +34,7 @@ Status: real dress rehearsal completed. No public HN/Reddit/social launch was pe
 ## Product Gaps Discovered
 
 - Decide whether the rehearsal repo/package/domain should become durable Launchframe surfaces or stay disposable evidence.
-- Replace example.com contacts with monitored real contacts.
+- Replace TBD monitored contacts with monitored real contacts.
 - Real demo asset.
 - Actual product behavior if this becomes more than a workspace pattern.
 

@@ -34,8 +34,13 @@ const requiredFiles = [
 ];
 
 const requiredOrgPaths = [
+  ['organization', 'legal_name'],
   ['organization', 'public_name'],
   ['organization', 'website'],
+  ['organization', 'support_email'],
+  ['organization', 'security_email'],
+  ['organization', 'privacy_email'],
+  ['organization', 'terms_email'],
   ['product', 'public_name'],
   ['product', 'one_sentence_description'],
   ['source_of_truth', 'online_repo_url'],
@@ -114,7 +119,7 @@ for (const needle of ['Launchframe Evidence Report', 'Package install', 'HTTPS e
 }
 
 const policyGate = readText('POLICY-LAUNCH-GATE.md');
-for (const needle of ['Required Before A Real Launch', 'support@example.com', 'TBD before real launch', 'Resolved During Rehearsal', 'repo/LICENSE']) {
+for (const needle of ['Required Before A Real Launch', 'TBD monitored support address', 'Volter AI, Inc.', 'TBD before real launch', 'Resolved During Rehearsal', 'repo/LICENSE']) {
   if (!policyGate.includes(needle)) failures.push(`policy launch gate missing expected placeholder: ${needle}`);
 }
 

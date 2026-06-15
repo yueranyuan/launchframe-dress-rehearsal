@@ -15,7 +15,7 @@
 |---|---|---|---|---|---|---|---|
 | LF-P-002 | defaulted | Decide whether to keep, archive, or delete the public rehearsal repo. | Keep as rehearsal evidence until owner says otherwise. | Owner | Cleanup policy only; not blocking rehearsal completion. | 2026-06-15 | defaulted |
 | LF-P-003 | owner | Decide whether to keep, narrow, or revoke the npm bypass token after rehearsal use. | Keep only if more rehearsals need it; otherwise revoke/narrow. | Owner / npm | Token hygiene. | 2026-06-15 | pending |
-| LF-P-004 | owner | Replace example.com support/security/privacy/legal contacts before any production launch. | Keep placeholders only for rehearsal artifacts. | Owner | Production policy/contact claims. | 2026-06-15 | pending |
+| LF-P-004 | owner | Replace TBD monitored support/security/privacy/legal/conduct contacts before any production launch. | Keep placeholders only for rehearsal artifacts until owner approves real monitored addresses. | Owner | Production policy/contact claims. | 2026-06-15 | pending |
 
 ## Recently Resolved
 

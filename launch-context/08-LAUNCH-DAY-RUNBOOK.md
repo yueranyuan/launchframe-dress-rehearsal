@@ -64,6 +64,6 @@ Status: dress rehearsal. Execute as a tabletop run; do not perform external publ
 ## Current Open Items
 
 - GitHub Pages HTTPS certificate is issued and enforcement is on for `launchframe.site`.
-- Rehearsal support/security/privacy/legal/conduct contacts use example.com placeholders; replace before any production launch.
+- Rehearsal support/security/privacy/legal/conduct contacts use TBD monitored-contact placeholders; replace with owner-approved monitored addresses before any production launch.
 - Owner must decide whether to keep/archive the rehearsal repo and whether to keep/narrow/revoke the npm credential.
 - No public HN/Reddit/social/community posting was performed in this rehearsal.
