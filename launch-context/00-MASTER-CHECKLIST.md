@@ -51,6 +51,7 @@
 | Evidence report generation | `node launch-context/scripts/generate-evidence-report.mjs launch-context`; public repo commit `3e4c3a8` | Generated `EVIDENCE-REPORT.md`; public issue #2 closed | 2026-06-15 |
 | Policy launch gate | `POLICY-LAUNCH-GATE.md`; public issue #3 | Placeholder policy/contact/legal blockers identified for real launch | 2026-06-15 |
 | Repo collateral completeness | `repo/LICENSE`; `repo/.github/ISSUE_TEMPLATE/`; public `launch-context/repo/` | Exact Apache-2.0 license text and repo collateral are present in the auditable launch context | 2026-06-15 |
+| Social preview image | `assets/og-launchframe.jpg`; public repo commit `f6c194f` | 1200x630 OG image generated and deployed in site metadata | 2026-06-15 |
 
 ## 1. Intake: Facts To Gather From The User
 
@@ -238,8 +239,8 @@ Use `../../templates/repo/` and `../../templates/policies/` for first drafts. Ag
 - 🟢 Practice site is visually ready as a practice artifact
 - 🟢 Real product logo/wordmark: rehearsal uses site wordmark
 - 🟢 Real favicon/app icons: inline SVG favicon deployed in `site/index.html`
-- 🟢 Real OG/social image: dry-run target described in `07-ASSETS.md`
-- 🟢 Real GitHub social preview: dry-run target described in `07-ASSETS.md`
+- 🟢 Real OG/social image: `assets/og-launchframe.jpg`
+- 🟢 Real GitHub/social preview asset: `assets/og-launchframe.jpg`; external validator check deferred until HTTPS is available
 - 🟢 Real rehearsal deploy URL: `http://launchframe.site/`
 - 🟡 Real production metadata/canonical URL: site source uses `http://launchframe.site/` until GitHub Pages certificate is issued and HTTPS can be enforced
 

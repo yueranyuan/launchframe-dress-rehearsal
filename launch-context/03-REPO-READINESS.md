@@ -70,7 +70,7 @@ External publishing is intentionally not executed.
 - [x] Good first issues listed in CONTRIBUTING.
 - [ ] CI badge, skipped for dry run.
 - [ ] Package/version badge, skipped for dry run.
-- [ ] Social preview image, specified but not generated.
+- [x] Social preview image generated at `assets/og-launchframe.jpg`.
 - [x] Privacy/telemetry stance for practice artifact recorded in `00-org-context.json`.
 - [x] Privacy policy.
 - [x] Terms of use.

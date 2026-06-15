@@ -59,6 +59,13 @@ function readText(relativePath) {
   return readFileSync(path, 'utf8');
 }
 
+function existingPath(relativePaths) {
+  for (const relativePath of relativePaths) {
+    if (existsSync(join(root, relativePath))) return relativePath;
+  }
+  return null;
+}
+
 function valueAt(object, path) {
   return path.reduce((current, key) => {
     if (current && typeof current === 'object' && key in current) return current[key];
@@ -124,6 +131,16 @@ if (security.includes('volter-ai/launchframe') || security.includes('launchframe
 
 const terms = readText('repo/docs/TERMS.md');
 if (terms.includes('TBD before real launch')) warnings.push('terms retain owner/legal-review placeholders, which is acceptable only for rehearsal mode');
+
+const sitePath = existingPath(['site/index.html', '../index.html']);
+const ogPath = existingPath(['site/assets/og-launchframe.jpg', '../assets/og-launchframe.jpg']);
+if (!sitePath) failures.push('missing site index for social preview metadata check');
+if (!ogPath) failures.push('missing social preview image: assets/og-launchframe.jpg');
+
+const site = sitePath ? readText(sitePath) : '';
+for (const needle of ['og:image', 'twitter:card', 'assets/og-launchframe.jpg']) {
+  if (!site.includes(needle)) failures.push(`site/index.html missing social preview metadata: ${needle}`);
+}
 
 const website = valueAt(org, ['organization', 'website']);
 if (typeof website === 'string' && website.startsWith('https://launchframe.site')) {
