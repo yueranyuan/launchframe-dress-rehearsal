@@ -22,6 +22,14 @@ const requiredFiles = [
   'EVIDENCE-REPORT.md',
   'POLICY-LAUNCH-GATE.md',
   'PENDING.md',
+  'repo/LICENSE',
+  'repo/LICENSE.SELECTOR.md',
+  'repo/CONTRIBUTING.md',
+  'repo/CODE_OF_CONDUCT.md',
+  'repo/.github/ISSUE_TEMPLATE/bug_report.yml',
+  'repo/.github/ISSUE_TEMPLATE/feature_request.yml',
+  'repo/.github/ISSUE_TEMPLATE/question.yml',
+  'repo/docs/TELEMETRY.md',
 ];
 
 const requiredOrgPaths = [
@@ -95,8 +103,18 @@ for (const needle of ['Launchframe Evidence Report', 'Package install', 'GitHub 
 }
 
 const policyGate = readText('POLICY-LAUNCH-GATE.md');
-for (const needle of ['Required Before A Real Launch', 'support@example.com', 'TBD before real launch', 'Apache-2.0']) {
+for (const needle of ['Required Before A Real Launch', 'support@example.com', 'TBD before real launch', 'Resolved During Rehearsal', 'repo/LICENSE']) {
   if (!policyGate.includes(needle)) failures.push(`policy launch gate missing expected placeholder: ${needle}`);
+}
+
+const license = readText('repo/LICENSE');
+for (const needle of ['Apache License', 'Version 2.0, January 2004', 'TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION']) {
+  if (!license.includes(needle)) failures.push(`repo/LICENSE missing Apache-2.0 text: ${needle}`);
+}
+
+const licenseSelector = readText('repo/LICENSE.SELECTOR.md');
+if (!licenseSelector.includes('- [x] Exact upstream license text copied before any real public repo launch.')) {
+  failures.push('repo/LICENSE.SELECTOR.md does not mark exact license text as copied');
 }
 
 const security = readText('repo/SECURITY.md');

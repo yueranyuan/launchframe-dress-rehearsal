@@ -8,13 +8,18 @@ Status: rehearsal artifact. This identifies policy placeholders that block a rea
 |---|---|---|
 | Contacts | `support@example.com`, `security@example.com`, `privacy@example.com`, `legal@example.com`, `conduct@example.com` | Replace with monitored real addresses or remove the surface. |
 | Terms | `TBD before real launch` disclaimer and liability sections | Owner/legal-approved terms or explicit decision not to publish terms. |
-| License | `repo/LICENSE.SELECTOR.md` selects Apache-2.0 but exact authoritative license text must be present in the public repo | Copy exact Apache-2.0 text from the authoritative source if Apache-2.0 remains selected. |
 | Code of conduct | Rehearsal enforcement contact | Use official Contributor Covenant text and a real enforcement contact before advertising a community. |
 | Privacy | Rehearsal says no hosted service, accounts, telemetry, or payments | Reverify against production code, analytics, hosting logs, package behavior, support flow, and any community tooling. |
 | Telemetry | Rehearsal says no telemetry and no analytics | Reverify with source search, deployed site review, package behavior, and network checks. |
 | Security | Rehearsal advisory URL and contact exist, but contact is a placeholder | Replace contact and verify GitHub Security Advisories are enabled for the production repo. |
 | Community | Discord/linkedin/social links are rehearsal placeholders | Create real community surfaces and enforcement paths, or remove community claims. |
 | Jurisdiction/entity | Operator is `Launchframe Rehearsal Project`; jurisdiction and mailing address are unset | Fill real operator/legal entity details if publishing legal terms or privacy commitments. |
+
+## Resolved During Rehearsal
+
+| Area | Resolution | Evidence |
+|---|---|---|
+| License text | Apache-2.0 was selected for the rehearsal and exact license text was copied into the repo collateral. | `repo/LICENSE`, `repo/LICENSE.SELECTOR.md` |
 
 ## Rehearsal-Safe Claims
 
@@ -28,7 +33,7 @@ Status: rehearsal artifact. This identifies policy placeholders that block a rea
 Run:
 
 ```sh
-node products/practice-launchframe/scripts/validate-launch-context.mjs products/practice-launchframe
+node launch-context/scripts/validate-launch-context.mjs launch-context
 ```
 
 Expected result: pass with a warning that terms retain owner/legal-review placeholders.

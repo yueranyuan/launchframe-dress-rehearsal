@@ -13,10 +13,9 @@ External production readiness: not executed. The rehearsal uses low-risk real re
 
 ## Install
 
-Current practice artifact:
+Current rehearsal artifact:
 
 ```sh
-cd site
 python3 -m http.server 4173
 ```
 
@@ -37,12 +36,11 @@ npx launchframe-dress-rehearsal
 Practice demo:
 
 ```sh
-cd this public rehearsal repository
-open products/practice-launchframe/00-MASTER-CHECKLIST.md
-open products/practice-launchframe/00-org-context.json
-open products/practice-launchframe/00-brand-context.md
-open products/practice-launchframe/site/index.html
-open products/practice-launchframe/review/gemini-cycle-review-and-website-readiness-01.md
+open launch-context/00-MASTER-CHECKLIST.md
+open launch-context/00-org-context.json
+open launch-context/00-brand-context.md
+open index.html
+open launch-context/11-DRESS-REHEARSAL-REPORT.md
 ```
 
 Expected result:
@@ -64,10 +62,11 @@ External publishing is intentionally not executed.
 ## OSS Trust
 
 - [x] LICENSE selector.
+- [x] Exact Apache-2.0 license text copied into `repo/LICENSE`.
 - [x] SECURITY.md.
 - [x] CONTRIBUTING.md.
 - [x] CODE_OF_CONDUCT.md.
-- [ ] Issue templates copied into rehearsal repo.
+- [x] Issue templates copied into rehearsal repo.
 - [x] Good first issues listed in CONTRIBUTING.
 - [ ] CI badge, skipped for dry run.
 - [ ] Package/version badge, skipped for dry run.
@@ -92,11 +91,8 @@ launchframe scrub --check
 For the current practice artifact, the equivalent proof is file presence and Gemini review:
 
 ```sh
-test -f products/practice-launchframe/00-org-context.json
-test -f products/practice-launchframe/00-brand-context.md
-test -f products/practice-launchframe/00-MASTER-CHECKLIST.md
-test -f products/practice-launchframe/01-STRATEGY.md
-test -f products/practice-launchframe/review/gemini-cycle-review-and-website-readiness-01.md
+node launch-context/scripts/generate-evidence-report.mjs launch-context
+node launch-context/scripts/validate-launch-context.mjs launch-context
 ```
 
 ## Template Pack

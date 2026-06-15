@@ -13,6 +13,7 @@ Generated from `00-MASTER-CHECKLIST.md` by `scripts/generate-evidence-report.mjs
 | Launch context validation | `node launch-context/scripts/validate-launch-context.mjs launch-context`; public repo commit `b830f0f` | Public sanitized `launch-context/` bundle validates; issue #1 closed | 2026-06-15 |
 | Evidence report generation | `node launch-context/scripts/generate-evidence-report.mjs launch-context`; public repo commit `3e4c3a8` | Generated `EVIDENCE-REPORT.md`; public issue #2 closed | 2026-06-15 |
 | Policy launch gate | `POLICY-LAUNCH-GATE.md`; public issue #3 | Placeholder policy/contact/legal blockers identified for real launch | 2026-06-15 |
+| Repo collateral completeness | `repo/LICENSE`; `repo/.github/ISSUE_TEMPLATE/`; public `launch-context/repo/` | Exact Apache-2.0 license text and repo collateral are present in the auditable launch context | 2026-06-15 |
 
 ## Open External Waits
 

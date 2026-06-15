@@ -50,6 +50,7 @@
 | Launch context validation | `node launch-context/scripts/validate-launch-context.mjs launch-context`; public repo commit `b830f0f` | Public sanitized `launch-context/` bundle validates; issue #1 closed | 2026-06-15 |
 | Evidence report generation | `node launch-context/scripts/generate-evidence-report.mjs launch-context`; public repo commit `3e4c3a8` | Generated `EVIDENCE-REPORT.md`; public issue #2 closed | 2026-06-15 |
 | Policy launch gate | `POLICY-LAUNCH-GATE.md`; public issue #3 | Placeholder policy/contact/legal blockers identified for real launch | 2026-06-15 |
+| Repo collateral completeness | `repo/LICENSE`; `repo/.github/ISSUE_TEMPLATE/`; public `launch-context/repo/` | Exact Apache-2.0 license text and repo collateral are present in the auditable launch context | 2026-06-15 |
 
 ## 1. Intake: Facts To Gather From The User
 
@@ -156,7 +157,7 @@ This is the first step for every new product workspace. Fill this before strateg
 
 ## 3. Launch-Control Boundary
 
-- 🟢 Practice workspace: `products/practice-launchframe/`
+- 🟢 Public launch context workspace: `launch-context/`
 - 🟢 Site source: `site/index.html`
 - 🟢 Site generated assets: `site/assets/`
 - 🟢 Visual concept assets: `assets/`
@@ -210,7 +211,7 @@ Rule: this launch workspace may draft and review launch collateral, but the prod
 
 Use `../../templates/repo/` and `../../templates/policies/` for first drafts. Agents may fill placeholders from verified facts; they should not write critical policy, security, conduct, or license language from scratch.
 
-- 🟢 LICENSE present in product repo: rehearsal selector at `repo/LICENSE.SELECTOR.md`
+- 🟢 LICENSE present in product repo: exact Apache-2.0 text at `repo/LICENSE` and rehearsal selector at `repo/LICENSE.SELECTOR.md`
 - 🟢 SECURITY.md present: `repo/SECURITY.md`
 - 🟢 CONTRIBUTING.md present: `repo/CONTRIBUTING.md`
 - 🟢 CODE_OF_CONDUCT.md present: `repo/CODE_OF_CONDUCT.md`

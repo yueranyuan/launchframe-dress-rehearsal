@@ -55,7 +55,7 @@
     "package_manager": "npm",
     "package_name": "launchframe-dress-rehearsal",
     "install_command": "npx launchframe-dress-rehearsal",
-    "quickstart_command": "Open http://launchframe.site/ or serve products/practice-launchframe/site locally.",
+    "quickstart_command": "Open http://launchframe.site/ or serve this repository locally with python3 -m http.server 4173.",
     "domain": "launchframe.site",
     "registrar": "Name.com",
     "hosting_provider": "GitHub Pages",
@@ -89,7 +89,7 @@
   },
   "verification": {
     "core_falsifiable_demo": "Launchframe turns scattered OSS launch work into an auditable gated workspace with context, checklists, visual cycles, repo/policy templates, and readiness reviews.",
-    "demo_command": "Review products/practice-launchframe/00-MASTER-CHECKLIST.md, 00-org-context.json, 00-brand-context.md, site/index.html, assets/final-designs/, and review/gemini-cycle-review-and-website-readiness-01.md.",
+    "demo_command": "Review launch-context/00-MASTER-CHECKLIST.md, launch-context/00-org-context.json, launch-context/00-brand-context.md, index.html, and launch-context/11-DRESS-REHEARSAL-REPORT.md.",
     "expected_failure": "A launch cannot be marked production-ready without real repo, package, policy, domain, community, install, and owner-approved public claims.",
     "expected_pass": "Dress rehearsal readiness passes with low-risk real rehearsal surfaces while public posting remains unexecuted.",
     "clean_install_verified": true,
