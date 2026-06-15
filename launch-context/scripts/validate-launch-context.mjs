@@ -131,7 +131,7 @@ for (const needle of ['actions/workflows/launch-context.yml/badge.svg', 'img.shi
 }
 
 const workflow = readText('repo/.github/workflows/launch-context.yml');
-for (const needle of ['FORCE_JAVASCRIPT_ACTIONS_TO_NODE24', 'generate-evidence-report.mjs', 'validate-launch-context.mjs']) {
+for (const needle of ['actions/checkout@v5', 'actions/setup-node@v5', 'FORCE_JAVASCRIPT_ACTIONS_TO_NODE24', 'generate-evidence-report.mjs', 'validate-launch-context.mjs']) {
   if (!workflow.includes(needle)) failures.push(`launch context workflow missing expected command/config: ${needle}`);
 }
 
