@@ -19,6 +19,7 @@ const requiredFiles = [
   '09-RETRO.md',
   '10-WORKLOG.md',
   '11-DRESS-REHEARSAL-REPORT.md',
+  'EVIDENCE-REPORT.md',
   'PENDING.md',
 ];
 
@@ -85,6 +86,11 @@ if (!pending.includes('LF-P-001') || !pending.includes('GitHub Pages HTTPS certi
 const report = readText('11-DRESS-REHEARSAL-REPORT.md');
 for (const needle of ['launchframe-dress-rehearsal', 'launchframe.site', 'npm package', 'GitHub repo']) {
   if (!report.includes(needle)) failures.push(`dress rehearsal report missing surface: ${needle}`);
+}
+
+const evidenceReport = readText('EVIDENCE-REPORT.md');
+for (const needle of ['Launchframe Evidence Report', 'Package install', 'GitHub Pages HTTPS certificate']) {
+  if (!evidenceReport.includes(needle)) failures.push(`evidence report missing expected content: ${needle}`);
 }
 
 const security = readText('repo/SECURITY.md');

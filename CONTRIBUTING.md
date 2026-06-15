@@ -31,6 +31,7 @@ python3 -m http.server 4173
 Run structural checks:
 
 ```sh
+node launch-context/scripts/generate-evidence-report.mjs launch-context
 node launch-context/scripts/validate-launch-context.mjs launch-context
 ```
 

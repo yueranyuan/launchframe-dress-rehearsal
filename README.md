@@ -27,6 +27,12 @@ node launch-context/scripts/validate-launch-context.mjs launch-context
 
 The validator checks required launch artifacts, key `00-org-context.json` fields, current surface evidence, and stale URL/package claims. It may warn about owner/legal-review placeholders because this is still a rehearsal.
 
+Regenerate the evidence report:
+
+```sh
+node launch-context/scripts/generate-evidence-report.mjs launch-context
+```
+
 ## Current Limits
 
 - Launchframe is not yet a production product or public community.
