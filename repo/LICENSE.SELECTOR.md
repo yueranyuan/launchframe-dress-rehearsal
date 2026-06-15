@@ -5,7 +5,7 @@ Status: dress rehearsal.
 ## Decision
 
 - Product: Launchframe
-- Rehearsal repo URL: `https://github.com/volter-ai/launchframe`
+- Rehearsal repo URL: `https://github.com/yueranyuan/launchframe-dress-rehearsal`
 - Copyright holder: Launchframe Rehearsal Project
 - Year: 2026
 - Chosen license: Apache-2.0
@@ -22,4 +22,3 @@ Apache-2.0 matches the ztrack launch pattern and is a common permissive OSS lice
 - [ ] Exact upstream license text copied before any real public repo launch.
 - [x] Package metadata can use `Apache-2.0` in rehearsal.
 - [x] README/site can say Apache-2.0 in rehearsal copy only.
-

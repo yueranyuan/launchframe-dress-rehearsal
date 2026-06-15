@@ -11,12 +11,12 @@ These terms describe the intended public terms shape for Launchframe. They are n
 - Product: Launchframe
 - Operator: Launchframe Rehearsal Project
 - Contact: `legal@example.com`
-- Website: `https://launchframe.test`
-- Repository: `https://github.com/volter-ai/launchframe`
+- Website: `http://launchframe.site/`
+- Repository: `https://github.com/yueranyuan/launchframe-dress-rehearsal`
 
 ## Using The Product
 
-The dress rehearsal artifact is provided for review and process validation. No hosted service, account system, payment feature, package distribution, or public community is active.
+The dress rehearsal artifact is provided for review and process validation. No hosted service, account system, payment feature, or public community is active. A harmless npm rehearsal package exists only to exercise the publish/install gate.
 
 ## Accounts
 
@@ -57,4 +57,3 @@ For a real public launch, these terms must be reviewed and updated to match the 
 - Terms contact: `legal@example.com`
 - Security contact: `security@example.com`
 - Community contact: `conduct@example.com`
-

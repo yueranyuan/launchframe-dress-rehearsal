@@ -13,7 +13,7 @@ Status: dress rehearsal.
 Please report security vulnerabilities to:
 
 - Email: `security@example.com`
-- Advisory URL: `https://github.com/volter-ai/launchframe/security/advisories`
+- Advisory URL: `https://github.com/yueranyuan/launchframe-dress-rehearsal/security/advisories`
 
 Do not open a public GitHub issue for a suspected vulnerability.
 
@@ -37,4 +37,3 @@ Out of scope:
 - Social engineering.
 - Denial-of-service testing.
 - Rehearsal placeholder domains, packages, and community URLs.
-

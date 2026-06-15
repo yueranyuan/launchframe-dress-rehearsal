@@ -11,8 +11,8 @@ This policy explains how Launchframe handles information during the dress rehear
 - Product: Launchframe
 - Operator: Launchframe Rehearsal Project
 - Contact: `privacy@example.com`
-- Website: `https://launchframe.test`
-- Repository: `https://github.com/volter-ai/launchframe`
+- Website: `http://launchframe.site/`
+- Repository: `https://github.com/yueranyuan/launchframe-dress-rehearsal`
 - Hosted service involved? No
 - Telemetry involved? No
 - Accounts involved? No
@@ -58,4 +58,3 @@ We do not share rehearsal user information with subprocessors because no hosted 
 ## Changes
 
 For a real public launch, this policy must be reviewed and updated to match the deployed product.
-
