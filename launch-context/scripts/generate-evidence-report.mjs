@@ -55,9 +55,9 @@ const lines = [
   '|---|---|---|---|',
   ...rows.map((row) => `| ${row.gate} | ${row.evidence} | ${row.result} | ${row.date} |`),
   '',
-  '## Open External Waits',
+  '## External Waits',
   '',
-  '- GitHub Pages HTTPS certificate issuance for `launchframe.site` remains pending until `https_enforced` can be enabled.',
+  '- None for rehearsal. GitHub Pages HTTPS is enforced for `launchframe.site`.',
   '',
 ];
 

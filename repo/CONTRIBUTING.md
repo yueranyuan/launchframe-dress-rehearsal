@@ -21,19 +21,18 @@ Requirements:
 - A browser for site review.
 - Gemini CLI/API only when running the visual workflow.
 
-Serve the practice site:
+Serve the practice site from this public rehearsal repo:
 
 ```sh
-cd products/practice-launchframe/site
 python3 -m http.server 4173
 ```
 
 Run structural checks:
 
 ```sh
-python3 -m json.tool products/practice-launchframe/00-org-context.json >/tmp/launchframe-org-context.json
-test -f products/practice-launchframe/00-MASTER-CHECKLIST.md
-test -f products/practice-launchframe/08-LAUNCH-DAY-RUNBOOK.md
+python3 -m json.tool launch-context/00-org-context.json >/tmp/launchframe-org-context.json
+test -f launch-context/00-MASTER-CHECKLIST.md
+test -f launch-context/08-LAUNCH-DAY-RUNBOOK.md
 ```
 
 ## Pull Request Checklist
@@ -49,4 +48,3 @@ test -f products/practice-launchframe/08-LAUNCH-DAY-RUNBOOK.md
 - Code of conduct: `CODE_OF_CONDUCT.md`
 - Security reports: `SECURITY.md`
 - Discussion/community: `https://discord.gg/example` for rehearsal only.
-

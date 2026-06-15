@@ -11,7 +11,7 @@ The goal of this repo is to prove the external launch mechanics without pretendi
 
 ## Live Surfaces
 
-- Website: `http://launchframe.site/` until GitHub Pages issues the custom-domain HTTPS certificate
+- Website: `https://launchframe.site/`
 - npm package: `launchframe-dress-rehearsal@0.0.0-dress-rehearsal.0`
 - Install smoke test: `npx launchframe-dress-rehearsal`
 - Release: `v0.0.0-dress-rehearsal.0`
@@ -28,4 +28,4 @@ The goal of this repo is to prove the external launch mechanics without pretendi
 - Launchframe is not yet a production product or public community.
 - The npm package is intentionally harmless; it exists to exercise publish and install gates.
 - Policy docs use rehearsal contacts and require owner/legal review before any production launch.
-- Custom-domain HTTPS is pending GitHub Pages certificate issuance.
+- Custom-domain HTTPS is enforced.

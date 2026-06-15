@@ -16,7 +16,7 @@ Status: dress rehearsal. Execute as a tabletop run; do not perform external publ
 - [x] Repo collateral is rehearsal-ready.
 - [x] Package path is rehearsal-ready.
 - [x] README and social image are final for rehearsal.
-- [x] Website URL, canonical URL, OG image, and analytics are verified for rehearsal. Current rehearsal URL is HTTP until GitHub Pages certificate issuance completes.
+- [x] Website URL, canonical URL, OG image, and analytics are verified for rehearsal. HTTPS is enforced.
 - [ ] Founder/operator can monitor for 4-6 hours. Owner-bound for a real public post.
 
 ## T-3 Days
@@ -40,7 +40,7 @@ Status: dress rehearsal. Execute as a tabletop run; do not perform external publ
 - [x] Final smoke test for rehearsal surfaces.
 - [x] Publish package, if applicable.
 - [x] Flip/publish repo.
-- [x] Verify website/metadata/analytics for rehearsal; HTTPS enforcement remains external wait.
+- [x] Verify website/metadata/analytics for rehearsal; HTTPS enforcement is on.
 - [ ] Post Show HN. Deferred; no public posting in rehearsal.
 - [ ] Post founder first comment. Deferred; no public posting in rehearsal.
 - [ ] Publish social thread. Deferred; no public posting in rehearsal.
@@ -63,7 +63,7 @@ Status: dress rehearsal. Execute as a tabletop run; do not perform external publ
 
 ## Current Open Items
 
-- GitHub Pages HTTPS certificate has not been issued for `launchframe.site`; keep canonical URL on HTTP until enforcement is safe.
+- GitHub Pages HTTPS certificate is issued and enforcement is on for `launchframe.site`.
 - Rehearsal support/security/privacy/legal/conduct contacts use example.com placeholders; replace before any production launch.
 - Owner must decide whether to keep/archive the rehearsal repo and whether to keep/narrow/revoke the npm credential.
 - No public HN/Reddit/social/community posting was performed in this rehearsal.

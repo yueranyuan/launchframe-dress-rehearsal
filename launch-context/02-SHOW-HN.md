@@ -23,7 +23,7 @@ Production recommendation: GitHub repo.
 Dress rehearsal state:
 
 - Public repo URL: `https://github.com/yueranyuan/launchframe-dress-rehearsal` (real rehearsal repo).
-- Hosted demo/site URL: `http://launchframe.site/` (real rehearsal site; HTTPS certificate pending).
+- Hosted demo/site URL: `https://launchframe.site/` (real rehearsal site; HTTPS enforced).
 - Package/install path: `npx launchframe-dress-rehearsal` (published rehearsal package).
 
 ## Founder First Comment

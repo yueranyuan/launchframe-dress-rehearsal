@@ -67,7 +67,7 @@ Use this to preserve the decision trail while the practice launch is being built
 
 | Surface | Result | Account/provider | Notes |
 |---|---|---|---|
-| Domain | Purchased/configured | Name.com | `launchframe.site`, $2.99 first year, $49.99 renewal, expires 2027-06-15; DNS added for GitHub Pages with A, AAAA, and `www` CNAME records; visible on `1.1.1.1`; HTTPS certificate pending at GitHub. |
+| Domain | Purchased/configured | Name.com | `launchframe.site`, $2.99 first year, $49.99 renewal, expires 2027-06-15; DNS added for GitHub Pages with A, AAAA, and `www` CNAME records; visible on `1.1.1.1`; HTTPS certificate approved and enforced after clearing and re-adding the Pages custom domain. |
 | Package | Published | npm | `launchframe-dress-rehearsal@0.0.0-dress-rehearsal.0` published; registry `npx` verified. |
 | GitHub | Created | GitHub / yueranyuan | `https://github.com/yueranyuan/launchframe-dress-rehearsal` |
 | Social handles | Deferred | None | No social handle search/reservation done. |
@@ -78,7 +78,7 @@ Use this to preserve the decision trail while the practice launch is being built
 | Claim | How verified | Result | Follow-up |
 |---|---|---|---|
 | Launchframe is an OSS launch-control workspace. | Read brief, playbook, checklist, templates, site, and review artifacts. | Verified for practice scope. | Decide if it becomes a public product. |
-| Practice site readiness passed. | Gemini Cycle 3 review and deployed HTTP check. | Passed for practice artifact; metadata updated to avoid premature HTTPS claim. | Enforce HTTPS after GitHub certificate issuance. |
+| Practice site readiness passed. | Gemini Cycle 3 review and deployed HTTPS check. | Passed for practice artifact; metadata updated to HTTPS after certificate approval and enforcement. | Keep HTTPS enforcement verified before any real public launch. |
 | Production launch is not ready. | Checklist and Gemini Cycle 3 deferred gaps. | Not ready. | Need owner-approved positioning, real support/security contacts, legal review, and public launch approval. |
 
 ## Blockers

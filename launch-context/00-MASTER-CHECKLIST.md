@@ -9,18 +9,18 @@
 ## 0. Current Launch Dashboard
 
 - Mode: real dress rehearsal, not public launch
-- Overall state: complete for rehearsal; pending external GitHub certificate issuance for custom-domain HTTPS
+- Overall state: complete for rehearsal; custom-domain HTTPS enforced
 - Pending queue: `PENDING.md`
 - Link target: `https://github.com/yueranyuan/launchframe-dress-rehearsal`
 - Package/install target: `npx launchframe-dress-rehearsal`
-- Site target: `http://launchframe.site/` until GitHub Pages certificate is ready for HTTPS
+- Site target: `https://launchframe.site/`
 - Public posting status: not started; no HN/Reddit/social posts made
 
 ### Hard Blockers
 
 | Blocker | Required for | Owner | Next action | Status |
 |---|---|---|---|---|
-| GitHub Pages certificate for `launchframe.site` | HTTPS custom-domain launch | GitHub Pages | Poll certificate status, then enforce HTTPS | External certificate issuance pending |
+| None for rehearsal | Rehearsal completion | n/a | Keep owner/posting decisions in `PENDING.md` | Clear |
 
 ### Scope Decisions
 
@@ -28,9 +28,9 @@
 |---|---|---|---|---|
 | Repo | required | GitHub: `yueranyuan/launchframe-dress-rehearsal` | OSS launch needs public source/trust surface | Live |
 | Package registry | required | npm: `launchframe-dress-rehearsal` | Rehearses install/publish gate | Published |
-| Website hosting | required | GitHub Pages | Static site; Vercel token path was not needed | Live over HTTP |
+| Website hosting | required | GitHub Pages | Static site; Vercel token path was not needed | Live over HTTPS |
 | Custom domain | required for rehearsal | Name.com: `launchframe.site` | Exercises real purchase/DNS flow | Registered and routed |
-| HTTPS | required before real public launch | GitHub Pages certificate | Public site should be HTTPS | Domain valid and HTTPS-eligible; certificate not issued yet |
+| HTTPS | required before real public launch | GitHub Pages certificate | Public site should be HTTPS | Enforced |
 | Support/security email | out of scope for rehearsal | `example.com` placeholders | No real support surface advertised | Deferred |
 | Social/community | out of scope for rehearsal | Safe placeholders/drafts only | No public posting in dress rehearsal | Deferred |
 | Analytics | out of scope | none | Static rehearsal does not need metrics | Deferred |
@@ -41,12 +41,12 @@
 | Gate | Latest evidence | Result | Date |
 |---|---|---|---|
 | Repo | `gh repo view yueranyuan/launchframe-dress-rehearsal` | Public repo exists | 2026-06-15 |
-| Site | `curl -I http://launchframe.site/` | HTTP 200 from GitHub Pages | 2026-06-15 |
+| Site | `curl -I https://launchframe.site/` | HTTP 200 from GitHub Pages | 2026-06-15 |
 | Package install | `npx --yes launchframe-dress-rehearsal@0.0.0-dress-rehearsal.0` | Runs successfully | 2026-06-15 |
 | Domain/DNS | `dig +short launchframe.site A @1.1.1.1`; `dig +short launchframe.site AAAA @1.1.1.1` | GitHub Pages A and AAAA records resolve; `www` CNAME resolves | 2026-06-15 |
-| HTTPS | `gh api .../pages/health`; `curl -I https://launchframe.site/` | GitHub says domain is valid and HTTPS-eligible; curl fails hostname verification because the certificate does not exist yet | 2026-06-15 |
-| Site deploy correction | Public repo commits `08fca8a`, `e2ec0ac`; `curl -sS http://launchframe.site/ \| shasum -a 256`; Playwright console check | Live HTTP page hash matches corrected local `site/index.html`; stale npm-gate and premature HTTPS canonical copy removed; console clean | 2026-06-15 |
-| GitHub repo metadata | `gh repo view yueranyuan/launchframe-dress-rehearsal --json homepageUrl` | Repo homepage points to `http://launchframe.site/` until HTTPS certificate is enforceable | 2026-06-15 |
+| HTTPS | `gh api repos/yueranyuan/launchframe-dress-rehearsal/pages`; `curl -I https://launchframe.site/`; certificate SAN check | GitHub Pages certificate approved for `launchframe.site` and `www.launchframe.site`; HTTPS enforced; curl returns 200 | 2026-06-15 |
+| Site deploy correction | Public repo commits `08fca8a`, `e2ec0ac`; `curl -sS https://launchframe.site/ \| shasum -a 256`; Playwright console check | Live HTTPS page hash matches corrected local `site/index.html`; stale npm-gate copy removed; console clean | 2026-06-15 |
+| GitHub repo metadata | `gh repo view yueranyuan/launchframe-dress-rehearsal --json homepageUrl` | Repo homepage points to `https://launchframe.site/` | 2026-06-15 |
 | Launch context validation | `node launch-context/scripts/validate-launch-context.mjs launch-context`; public repo commit `b830f0f` | Public sanitized `launch-context/` bundle validates; issue #1 closed | 2026-06-15 |
 | Evidence report generation | `node launch-context/scripts/generate-evidence-report.mjs launch-context`; public repo commit `3e4c3a8` | Generated `EVIDENCE-REPORT.md`; public issue #2 closed | 2026-06-15 |
 | Policy launch gate | `POLICY-LAUNCH-GATE.md`; public issue #3 | Placeholder policy/contact/legal blockers identified for real launch | 2026-06-15 |
@@ -54,7 +54,7 @@
 | Social preview image | `assets/og-launchframe.jpg`; public repo commit `f6c194f` | 1200x630 OG image generated and deployed in site metadata | 2026-06-15 |
 | CI and package badges | Public repo commits `c1ddcc4`, `519018b`, `9352211`, `1743229`; GitHub Actions run `27578576958`; `repo/README.md` | Launch context CI passed; README includes CI and npm version badges; workflow uses Node 24 actions | 2026-06-15 |
 | Demo GIF | `assets/launchframe-demo.gif` | 800x450, 7-second GIF generated from accepted screenshots | 2026-06-15 |
-| Launch-day runbook reconciliation | `08-LAUNCH-DAY-RUNBOOK.md`; `npx --yes launchframe-dress-rehearsal@0.0.0-dress-rehearsal.0`; HTTP asset checks; vote-solicitation grep | Runbook marks completed rehearsal steps, owner/deferred posting items, and external HTTPS wait accurately | 2026-06-15 |
+| Launch-day runbook reconciliation | `08-LAUNCH-DAY-RUNBOOK.md`; `npx --yes launchframe-dress-rehearsal@0.0.0-dress-rehearsal.0`; HTTPS asset checks; vote-solicitation grep | Runbook marks completed rehearsal steps, owner/deferred posting items, and resolved HTTPS accurately | 2026-06-15 |
 
 ## 1. Intake: Facts To Gather From The User
 
@@ -77,7 +77,7 @@ This is the first step for every new product workspace. Fill this before strateg
 - 🟢 Existing README path: `README.md`
 - 🟢 Existing demo / screenshots path: `review/screenshots/`
 - 🟢 Existing package registry URL: `https://www.npmjs.com/package/launchframe-dress-rehearsal` (published rehearsal package)
-- 🟢 Existing website URL: `http://launchframe.site/` until GitHub Pages HTTPS is enforceable; fallback `https://yueranyuan.github.io/launchframe-dress-rehearsal/`
+- 🟢 Existing website URL: `https://launchframe.site/`; fallback `https://yueranyuan.github.io/launchframe-dress-rehearsal/`
 - 🟢 License: Apache-2.0 selected for dress rehearsal
 - 🟢 Business model: none for dress rehearsal; real product requires sourced comparable research before pricing/commercial claims
 - 🟢 Pricing status: none
@@ -144,7 +144,7 @@ This is the first step for every new product workspace. Fill this before strateg
 - 🟢 Signed-in browser account-console path verified through `.claude/skills/browser`; MCP/fresh browser path rejected.
 - 🟢 Secrets remain outside the public rehearsal repo.
 - 🟢 npm publish path uses an isolated temporary userconfig so stale global config cannot shadow the intended credential.
-- 🟢 Remaining external gap classified as certificate issuance wait, not missing setup: GitHub Pages HTTPS certificate for `launchframe.site`.
+- 🟢 GitHub Pages HTTPS certificate approved and enforcement enabled for `launchframe.site`.
 
 ## 2. Decisions
 
@@ -172,7 +172,7 @@ This is the first step for every new product workspace. Fill this before strateg
 - 🟢 Real product source-of-truth repo for practice: `this public rehearsal repository`
 - 🟢 Rehearsal public GitHub URL: `https://github.com/yueranyuan/launchframe-dress-rehearsal`
 - 🟢 Rehearsal package registry URL: `https://www.npmjs.com/package/launchframe-dress-rehearsal`
-- 🟢 Rehearsal deployed website URL: `http://launchframe.site/`; fallback `https://yueranyuan.github.io/launchframe-dress-rehearsal/`
+- 🟢 Rehearsal deployed website URL: `https://launchframe.site/`; fallback `https://yueranyuan.github.io/launchframe-dress-rehearsal/`
 - 🟢 Real docs path for practice: `../../playbook/`
 - 🟢 Rehearsal community URL: `https://discord.gg/example`
 
@@ -245,9 +245,9 @@ Use `../../templates/repo/` and `../../templates/policies/` for first drafts. Ag
 - 🟢 Real product logo/wordmark: rehearsal uses site wordmark
 - 🟢 Real favicon/app icons: inline SVG favicon deployed in `site/index.html`
 - 🟢 Real OG/social image: `assets/og-launchframe.jpg`
-- 🟢 Real GitHub/social preview asset: `assets/og-launchframe.jpg`; external validator check deferred until HTTPS is available
-- 🟢 Real rehearsal deploy URL: `http://launchframe.site/`
-- 🟡 Real production metadata/canonical URL: site source uses `http://launchframe.site/` until GitHub Pages certificate is issued and HTTPS can be enforced
+- 🟢 Real GitHub/social preview asset: `assets/og-launchframe.jpg`; HTTPS URL available for external validators
+- 🟢 Real rehearsal deploy URL: `https://launchframe.site/`
+- 🟢 Real production metadata/canonical URL: site source uses `https://launchframe.site/`
 
 ## 8. Launch Collateral Gate
 
@@ -349,4 +349,4 @@ Launchframe is now a full dress rehearsal. It is not a public launch; no externa
 - 🟢 Rehearsal repo/policy docs filled under `repo/`.
 - 🟢 GitHub repo and Pages external publication executed.
 - 🟢 npm publish gate resolved with verified account-console credential flow and isolated temporary npm userconfig.
-- 🟡 custom domain HTTPS certificate remains pending after DNS completion; GitHub Pages says the domain is valid and HTTPS-eligible but the certificate does not exist yet.
+- 🟢 custom domain HTTPS certificate is approved and enforced after clearing and re-adding the Pages custom domain.

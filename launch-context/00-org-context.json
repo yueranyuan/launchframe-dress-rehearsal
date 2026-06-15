@@ -10,7 +10,7 @@
   "organization": {
     "legal_name": "Launchframe Rehearsal Project",
     "public_name": "Launchframe",
-    "website": "http://launchframe.site/",
+    "website": "https://launchframe.site/",
     "support_email": "support@example.com",
     "security_email": "security@example.com",
     "privacy_email": "privacy@example.com",
@@ -45,7 +45,7 @@
     "readme_path": "README.md",
     "demo_path": "review/screenshots",
     "package_registry_url": "https://www.npmjs.com/package/launchframe-dress-rehearsal",
-    "website_url": "http://launchframe.site/",
+    "website_url": "https://launchframe.site/",
     "release_pipeline_path": null,
     "ci_url": null
   },
@@ -55,7 +55,7 @@
     "package_manager": "npm",
     "package_name": "launchframe-dress-rehearsal",
     "install_command": "npx launchframe-dress-rehearsal",
-    "quickstart_command": "Open http://launchframe.site/ or serve this repository locally with python3 -m http.server 4173.",
+    "quickstart_command": "Open https://launchframe.site/ or serve this repository locally with python3 -m http.server 4173.",
     "domain": "launchframe.site",
     "registrar": "Name.com",
     "hosting_provider": "GitHub Pages",
@@ -102,7 +102,7 @@
       "GitHub repository and GitHub Pages were created for real.",
       "npm package publish reached the real registry after signed-browser token creation and isolated userconfig publish.",
       "The published package was verified with npx.",
-      "Custom domain launchframe.site was purchased via Name.com and pointed at GitHub Pages; HTTPS certificate provisioning is pending.",
+      "Custom domain launchframe.site was purchased via Name.com and pointed at GitHub Pages; HTTPS certificate provisioning was restarted by clearing/re-adding the custom domain, then HTTPS enforcement was enabled.",
       "Discord, LinkedIn, and HN posting remain rehearsal targets only."
     ],
     "hard_constraints": [

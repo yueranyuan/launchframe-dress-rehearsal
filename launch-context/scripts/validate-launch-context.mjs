@@ -96,8 +96,11 @@ for (const needle of ['Current Launch Dashboard', 'Evidence Summary', 'GitHub Pa
 }
 
 const pending = readText('PENDING.md');
-if (!pending.includes('LF-P-001') || !pending.includes('GitHub Pages HTTPS certificate')) {
-  failures.push('pending queue missing GitHub Pages HTTPS certificate wait');
+if (pending.includes('GitHub Pages HTTPS certificate for `launchframe.site` has not been issued')) {
+  failures.push('pending queue still treats GitHub Pages HTTPS as unresolved');
+}
+if (!pending.includes('LF-R-009') || !pending.includes('HTTPS enforcement')) {
+  failures.push('pending queue missing resolved GitHub Pages HTTPS intervention');
 }
 
 const report = readText('11-DRESS-REHEARSAL-REPORT.md');
@@ -106,7 +109,7 @@ for (const needle of ['launchframe-dress-rehearsal', 'launchframe.site', 'npm pa
 }
 
 const evidenceReport = readText('EVIDENCE-REPORT.md');
-for (const needle of ['Launchframe Evidence Report', 'Package install', 'GitHub Pages HTTPS certificate']) {
+for (const needle of ['Launchframe Evidence Report', 'Package install', 'HTTPS enforced', 'None for rehearsal']) {
   if (!evidenceReport.includes(needle)) failures.push(`evidence report missing expected content: ${needle}`);
 }
 
@@ -160,8 +163,8 @@ if (!repoReadme.includes('assets/launchframe-demo.gif')) {
 }
 
 const website = valueAt(org, ['organization', 'website']);
-if (typeof website === 'string' && website.startsWith('https://launchframe.site')) {
-  failures.push('org website claims HTTPS before GitHub Pages certificate is enforced');
+if (website !== 'https://launchframe.site/') {
+  failures.push('org website must use enforced HTTPS URL');
 }
 
 if (failures.length) {

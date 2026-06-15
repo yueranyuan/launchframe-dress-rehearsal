@@ -9,7 +9,7 @@ Status: real dress rehearsal completed. No public HN/Reddit/social launch was pe
 - X/Twitter: tabletop only; not posted.
 - GitHub: public rehearsal repo created.
 - Package installs: harmless rehearsal package published and verified with `npx`.
-- Website traffic: GitHub Pages site served over HTTP; custom-domain HTTPS certificate still pending.
+- Website traffic: GitHub Pages site served over HTTPS after restarting custom-domain certificate provisioning and enabling enforcement.
 
 ## What Worked
 
@@ -34,7 +34,6 @@ Status: real dress rehearsal completed. No public HN/Reddit/social launch was pe
 ## Product Gaps Discovered
 
 - Decide whether the rehearsal repo/package/domain should become durable Launchframe surfaces or stay disposable evidence.
-- Copy exact Apache-2.0 license text before real publication.
 - Replace example.com contacts with monitored real contacts.
 - Real demo asset.
 - Actual product behavior if this becomes more than a workspace pattern.
@@ -57,3 +56,4 @@ Status: real dress rehearsal completed. No public HN/Reddit/social launch was pe
 - Master checklists should distinguish `rehearsal-complete`, `public launch`, `dry-run`, and `real external action`.
 - Deployed site copy and metadata must be rechecked after each external state transition, especially package publish and HTTPS readiness.
 - Context files should be filled before any downstream launch docs.
+- If GitHub Pages serves the fallback `*.github.io` certificate after DNS is correct and Pages health is valid, clear and re-add the custom domain, poll for the approved certificate, then enable HTTPS enforcement.

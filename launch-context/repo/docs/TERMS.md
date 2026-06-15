@@ -11,7 +11,7 @@ These terms describe the intended public terms shape for Launchframe. They are n
 - Product: Launchframe
 - Operator: Launchframe Rehearsal Project
 - Contact: `legal@example.com`
-- Website: `http://launchframe.site/`
+- Website: `https://launchframe.site/`
 - Repository: `https://github.com/yueranyuan/launchframe-dress-rehearsal`
 
 ## Using The Product

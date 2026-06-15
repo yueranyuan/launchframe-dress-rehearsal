@@ -11,7 +11,7 @@ This policy explains how Launchframe handles information during the dress rehear
 - Product: Launchframe
 - Operator: Launchframe Rehearsal Project
 - Contact: `privacy@example.com`
-- Website: `http://launchframe.site/`
+- Website: `https://launchframe.site/`
 - Repository: `https://github.com/yueranyuan/launchframe-dress-rehearsal`
 - Hosted service involved? No
 - Telemetry involved? No

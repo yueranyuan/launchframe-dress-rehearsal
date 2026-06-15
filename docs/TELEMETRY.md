@@ -34,10 +34,9 @@ No error reporting provider is configured.
 Commands or checks used to verify:
 
 ```sh
-rg -n "analytics|telemetry|sentry|posthog|plausible|vercel/insights" products/practice-launchframe/site products/practice-launchframe
+rg -n "analytics|telemetry|sentry|posthog|plausible|vercel/insights" index.html docs repo launch-context
 ```
 
 Reviewer: Codex
 
 Date: 2026-06-15
-
