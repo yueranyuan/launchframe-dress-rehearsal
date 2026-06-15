@@ -7,6 +7,8 @@ This is a low-risk public rehearsal artifact for Launchframe, an OSS launch-cont
 
 The goal of this repo is to prove the external launch mechanics without pretending the rehearsal package is a production product.
 
+![Launchframe rehearsal demo](assets/launchframe-demo.gif)
+
 ## Live Surfaces
 
 - Website: `http://launchframe.site/` until GitHub Pages issues the custom-domain HTTPS certificate
@@ -29,7 +31,7 @@ The goal of this repo is to prove the external launch mechanics without pretendi
 node launch-context/scripts/validate-launch-context.mjs launch-context
 ```
 
-The validator checks required launch artifacts, key `00-org-context.json` fields, current surface evidence, and stale URL/package claims. It may warn about owner/legal-review placeholders because this is still a rehearsal.
+The validator checks required launch artifacts, key `00-org-context.json` fields, current surface evidence, repo collateral, social preview assets, and stale URL/package claims. It may warn about owner/legal-review placeholders because this is still a rehearsal.
 
 Regenerate the evidence report:
 

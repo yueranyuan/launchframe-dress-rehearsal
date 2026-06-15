@@ -145,12 +145,18 @@ if (terms.includes('TBD before real launch')) warnings.push('terms retain owner/
 
 const sitePath = existingPath(['site/index.html', '../index.html']);
 const ogPath = existingPath(['site/assets/og-launchframe.jpg', '../assets/og-launchframe.jpg']);
+const demoGifPath = existingPath(['site/assets/launchframe-demo.gif', '../assets/launchframe-demo.gif']);
 if (!sitePath) failures.push('missing site index for social preview metadata check');
 if (!ogPath) failures.push('missing social preview image: assets/og-launchframe.jpg');
+if (!demoGifPath) failures.push('missing demo GIF: assets/launchframe-demo.gif');
 
 const site = sitePath ? readText(sitePath) : '';
 for (const needle of ['og:image', 'twitter:card', 'assets/og-launchframe.jpg']) {
   if (!site.includes(needle)) failures.push(`site/index.html missing social preview metadata: ${needle}`);
+}
+
+if (!repoReadme.includes('assets/launchframe-demo.gif')) {
+  failures.push('repo/README.md missing demo GIF reference');
 }
 
 const website = valueAt(org, ['organization', 'website']);

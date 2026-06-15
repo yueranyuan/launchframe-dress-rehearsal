@@ -17,14 +17,14 @@ Storyboard:
 2. Show final site screenshot.
 3. Show Gemini readiness report with production gaps.
 
-Status: storyboard complete; no final video/GIF generated for dry run.
+Status: storyboard complete; final lightweight GIF generated for the rehearsal.
 
 ## README GIF
 
-- Dimensions: TBD.
-- Duration: 7-12 seconds.
+- Dimensions: 800x450.
+- Duration: 7 seconds.
 - Caption: `Launchframe turns launch prep into a gated, auditable workspace.`
-- File path: dry-run not generated.
+- File path: `assets/launchframe-demo.gif`.
 
 ## Screenshots
 
@@ -33,6 +33,7 @@ Status: storyboard complete; no final video/GIF generated for dry run.
 - `review/screenshots/mobile-midpage.png`
 - `review/screenshots/fullpage.png`
 - `review/screenshots/artboard-fullpage.png`
+- `assets/launchframe-demo.gif`
 
 ## OG / Social Image
 
