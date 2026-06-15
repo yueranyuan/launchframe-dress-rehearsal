@@ -16,7 +16,16 @@ The goal of this repo is to prove the external launch mechanics without pretendi
 - `index.html` and `assets/` for the static GitHub Pages site.
 - `docs/PRIVACY.md`, `docs/TERMS.md`, and `docs/TELEMETRY.md` as rehearsal trust docs.
 - `SECURITY.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, and issue templates for repo-readiness practice.
+- `launch-context/` as the auditable launch checklist/context bundle.
 - `repo/` as a copy of the filled launch-repo collateral used during the rehearsal.
+
+## Validate The Rehearsal Context
+
+```sh
+node launch-context/scripts/validate-launch-context.mjs launch-context
+```
+
+The validator checks required launch artifacts, key `00-org-context.json` fields, current surface evidence, and stale URL/package claims. It may warn about owner/legal-review placeholders because this is still a rehearsal.
 
 ## Current Limits
 

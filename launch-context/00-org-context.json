@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0",
+  "status": "dress_rehearsal",
+  "last_updated": "2026-06-15",
+  "owner_approval": {
+    "approver_name": "Yueran Yuan",
+    "approver_role": "workspace owner",
+    "approval_required_before_publish": true
+  },
+  "organization": {
+    "legal_name": "Launchframe Rehearsal Project",
+    "public_name": "Launchframe",
+    "website": "http://launchframe.site/",
+    "support_email": "support@example.com",
+    "security_email": "security@example.com",
+    "privacy_email": "privacy@example.com",
+    "terms_email": "legal@example.com",
+    "mailing_address": null,
+    "jurisdiction": null
+  },
+  "product": {
+    "working_name": "Launchframe",
+    "public_name": "Launchframe",
+    "one_sentence_description": "Launchframe is an OSS launch-control workspace for developer-tool launches.",
+    "launch_objective": "dress_rehearsal",
+    "launch_scope": "Run the reusable OSS launch process end to end with low-risk real rehearsal surfaces.",
+    "launch_version": "practice-2026-06-15",
+    "current_public_state": "local_dress_rehearsal_artifact",
+    "license_spdx": "Apache-2.0",
+    "business_model": "none_dress_rehearsal",
+    "pricing_status": "none",
+    "monetization_summary": "No business model is implemented for the dress rehearsal. A real Launchframe product would require sourced comparable research and owner approval before any pricing, hosted, enterprise, BYOK, or commercial claims.",
+    "free_self_host_available": "not_applicable",
+    "byok_supported": "not_applicable",
+    "telemetry_default": "none",
+    "hosted_service": false,
+    "accounts_required": false,
+    "payments_enabled": false,
+    "ai_data_usage": "No product AI data usage is implemented; Gemini/Nano Banana were used only for launch asset generation and review in this workspace."
+  },
+  "source_of_truth": {
+    "local_repo_path": "this public rehearsal repository",
+    "online_repo_url": "https://github.com/yueranyuan/launchframe-dress-rehearsal",
+    "docs_path_or_url": "launch-context",
+    "readme_path": "README.md",
+    "demo_path": "review/screenshots",
+    "package_registry_url": "https://www.npmjs.com/package/launchframe-dress-rehearsal",
+    "website_url": "http://launchframe.site/",
+    "release_pipeline_path": null,
+    "ci_url": null
+  },
+  "surfaces": {
+    "github_org": "yueranyuan",
+    "github_repo_target": "yueranyuan/launchframe-dress-rehearsal",
+    "package_manager": "npm",
+    "package_name": "launchframe-dress-rehearsal",
+    "install_command": "npx launchframe-dress-rehearsal",
+    "quickstart_command": "Open http://launchframe.site/ or serve products/practice-launchframe/site locally.",
+    "domain": "launchframe.site",
+    "registrar": "Name.com",
+    "hosting_provider": "GitHub Pages",
+    "analytics_provider": "none",
+    "x_handle": "@launchframe_dev",
+    "linkedin_url": "https://www.linkedin.com/company/launchframe",
+    "discord_url": "https://discord.gg/example",
+    "slack_url": null,
+    "hn_account": "founder account, rehearsal only",
+    "newsletter_or_blog_url": null
+  },
+  "policy_docs": {
+    "license_path": "repo/LICENSE.SELECTOR.md",
+    "security_path": "repo/SECURITY.md",
+    "contributing_path": "repo/CONTRIBUTING.md",
+    "code_of_conduct_path": "repo/CODE_OF_CONDUCT.md",
+    "privacy_path": "repo/docs/PRIVACY.md",
+    "terms_path": "repo/docs/TERMS.md",
+    "telemetry_path": "repo/docs/TELEMETRY.md",
+    "responsible_disclosure_path": "repo/SECURITY.md",
+    "data_retention_summary": "Dress rehearsal uses local files and a local static server. No hosted user accounts, payments, telemetry, or persisted user data."
+  },
+  "launch": {
+    "primary_channel": "Show HN",
+    "link_target": "github_repo",
+    "launch_date_time": "2026-06-16 09:00 PT (dress rehearsal only)",
+    "founder_available_hours": 6,
+    "product_hunt_in_scope": false,
+    "reddit_in_scope": true,
+    "communities_to_avoid": []
+  },
+  "verification": {
+    "core_falsifiable_demo": "Launchframe turns scattered OSS launch work into an auditable gated workspace with context, checklists, visual cycles, repo/policy templates, and readiness reviews.",
+    "demo_command": "Review products/practice-launchframe/00-MASTER-CHECKLIST.md, 00-org-context.json, 00-brand-context.md, site/index.html, assets/final-designs/, and review/gemini-cycle-review-and-website-readiness-01.md.",
+    "expected_failure": "A launch cannot be marked production-ready without real repo, package, policy, domain, community, install, and owner-approved public claims.",
+    "expected_pass": "Dress rehearsal readiness passes with low-risk real rehearsal surfaces while public posting remains unexecuted.",
+    "clean_install_verified": true,
+    "data_scrub_verified": true,
+    "public_claims_verified_by": "Dress rehearsal artifacts",
+    "last_verified_at": "2026-06-15"
+  },
+  "notes": {
+    "known_limitations": [
+      "GitHub repository and GitHub Pages were created for real.",
+      "npm package publish reached the real registry after signed-browser token creation and isolated userconfig publish.",
+      "The published package was verified with npx.",
+      "Custom domain launchframe.site was purchased via Name.com and pointed at GitHub Pages; HTTPS certificate provisioning is pending.",
+      "Discord, LinkedIn, and HN posting remain rehearsal targets only."
+    ],
+    "hard_constraints": [
+      "Do not buy domains, publish npm packages, post to HN/Reddit/social, or create community accounts without explicit approval.",
+      "Record which external steps actually executed and which stopped at an auth/approval gate.",
+      "Do not claim npm publish success until registry publish succeeds.",
+      "Do not claim HTTPS readiness until the custom-domain certificate is issued and enforcement is enabled."
+    ],
+    "open_questions": [
+      "Should Launchframe become a real OSS product after this rehearsal?",
+      "If real, should the rehearsal targets become actual surfaces or be renamed?"
+    ]
+  }
+}

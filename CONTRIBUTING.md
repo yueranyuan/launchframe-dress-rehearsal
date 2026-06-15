@@ -31,9 +31,7 @@ python3 -m http.server 4173
 Run structural checks:
 
 ```sh
-python3 -m json.tool products/practice-launchframe/00-org-context.json >/tmp/launchframe-org-context.json
-test -f products/practice-launchframe/00-MASTER-CHECKLIST.md
-test -f products/practice-launchframe/08-LAUNCH-DAY-RUNBOOK.md
+node launch-context/scripts/validate-launch-context.mjs launch-context
 ```
 
 ## Pull Request Checklist
@@ -49,4 +47,3 @@ test -f products/practice-launchframe/08-LAUNCH-DAY-RUNBOOK.md
 - Code of conduct: `CODE_OF_CONDUCT.md`
 - Security reports: `SECURITY.md`
 - Discussion/community: `https://discord.gg/example` for rehearsal only.
-
