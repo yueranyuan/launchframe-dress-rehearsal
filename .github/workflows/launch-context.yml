@@ -1,0 +1,25 @@
+name: Launch context
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Regenerate evidence report
+        run: node launch-context/scripts/generate-evidence-report.mjs launch-context
+
+      - name: Validate launch context
+        run: node launch-context/scripts/validate-launch-context.mjs launch-context

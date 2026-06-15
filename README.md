@@ -1,5 +1,8 @@
 # Launchframe Dress Rehearsal
 
+[![Launch context](https://github.com/yueranyuan/launchframe-dress-rehearsal/actions/workflows/launch-context.yml/badge.svg)](https://github.com/yueranyuan/launchframe-dress-rehearsal/actions/workflows/launch-context.yml)
+[![npm](https://img.shields.io/npm/v/launchframe-dress-rehearsal?label=npm)](https://www.npmjs.com/package/launchframe-dress-rehearsal)
+
 This is a low-risk public rehearsal artifact for Launchframe, an OSS launch-control workspace for developer-tool launches.
 
 The goal of this repo is to prove the external launch mechanics without pretending the rehearsal package is a production product.
