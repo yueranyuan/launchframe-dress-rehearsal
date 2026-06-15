@@ -267,7 +267,7 @@ Use `../../templates/repo/` and `../../templates/policies/` for first drafts. Ag
 
 - 🟢 Core demo script: review the context/checklist/site/review artifacts as the practice proof
 - 🟢 Demo GIF for README: `assets/launchframe-demo.gif`
-- 🟢 7-second social cut: storyboard exists in `07-ASSETS.md`; generation skipped for dry run
+- 🟢 7-second social cut: covered for rehearsal by `assets/launchframe-demo.gif`
 - 🟢 Product screenshots: practice site screenshots exist in `review/screenshots/`
 - 🟢 Terminal/code screenshots: not applicable for current practice site; needed if packaged CLI exists
 - 🟢 Social preview validation: dry-run target specified; no external validator used
