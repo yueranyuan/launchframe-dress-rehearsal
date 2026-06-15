@@ -47,6 +47,9 @@
 | HTTPS | `gh api .../pages/health`; `curl -I https://launchframe.site/` | GitHub says domain is valid and HTTPS-eligible; curl fails hostname verification because the certificate does not exist yet | 2026-06-15 |
 | Site deploy correction | Public repo commits `08fca8a`, `e2ec0ac`; `curl -sS http://launchframe.site/ \| shasum -a 256`; Playwright console check | Live HTTP page hash matches corrected local `site/index.html`; stale npm-gate and premature HTTPS canonical copy removed; console clean | 2026-06-15 |
 | GitHub repo metadata | `gh repo view yueranyuan/launchframe-dress-rehearsal --json homepageUrl` | Repo homepage points to `http://launchframe.site/` until HTTPS certificate is enforceable | 2026-06-15 |
+| Launch context validation | `node launch-context/scripts/validate-launch-context.mjs launch-context`; public repo commit `b830f0f` | Public sanitized `launch-context/` bundle validates; issue #1 closed | 2026-06-15 |
+| Evidence report generation | `node launch-context/scripts/generate-evidence-report.mjs launch-context`; public repo commit `3e4c3a8` | Generated `EVIDENCE-REPORT.md`; public issue #2 closed | 2026-06-15 |
+| Policy launch gate | `POLICY-LAUNCH-GATE.md`; public issue #3 | Placeholder policy/contact/legal blockers identified for real launch | 2026-06-15 |
 
 ## 1. Intake: Facts To Gather From The User
 
@@ -109,6 +112,7 @@ This is the first step for every new product workspace. Fill this before strateg
 - 🟢 Privacy policy: `repo/docs/PRIVACY.md`
 - 🟢 Terms of service: `repo/docs/TERMS.md`
 - 🟢 Telemetry policy: `repo/docs/TELEMETRY.md`
+- 🟢 Policy launch gate: `POLICY-LAUNCH-GATE.md`
 - 🟢 Data retention / local-first note: practice artifact only; no hosted product data retention
 - 🟢 Responsible disclosure path: `repo/SECURITY.md`
 - 🟢 AI/data usage disclosure, if relevant: Gemini/Nano Banana used only for launch asset generation and review
@@ -215,6 +219,7 @@ Use `../../templates/repo/` and `../../templates/policies/` for first drafts. Ag
 - 🟢 README first screen explains why/try/proof for practice workspace
 - 🟢 GitHub topics/about/social preview configured: dry-run target in `11-DRESS-REHEARSAL-REPORT.md`
 - 🟢 Telemetry/privacy/local-data stance documented for practice in `00-org-context.json`
+- 🟢 Policy/contact/legal placeholder gate documented in `POLICY-LAUNCH-GATE.md`
 - 🟢 Public repo contains no private/client/internal data: verified for rehearsal scope by using safe placeholders and local artifacts
 
 ## 7. Brand And Site Gate

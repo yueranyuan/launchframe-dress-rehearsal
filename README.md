@@ -17,6 +17,7 @@ The goal of this repo is to prove the external launch mechanics without pretendi
 - `docs/PRIVACY.md`, `docs/TERMS.md`, and `docs/TELEMETRY.md` as rehearsal trust docs.
 - `SECURITY.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, and issue templates for repo-readiness practice.
 - `launch-context/` as the auditable launch checklist/context bundle.
+- `launch-context/POLICY-LAUNCH-GATE.md` as the explicit policy/contact/legal placeholder gate before any real launch.
 - `repo/` as a copy of the filled launch-repo collateral used during the rehearsal.
 
 ## Validate The Rehearsal Context

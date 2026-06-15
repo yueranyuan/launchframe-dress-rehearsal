@@ -20,6 +20,7 @@ const requiredFiles = [
   '10-WORKLOG.md',
   '11-DRESS-REHEARSAL-REPORT.md',
   'EVIDENCE-REPORT.md',
+  'POLICY-LAUNCH-GATE.md',
   'PENDING.md',
 ];
 
@@ -91,6 +92,11 @@ for (const needle of ['launchframe-dress-rehearsal', 'launchframe.site', 'npm pa
 const evidenceReport = readText('EVIDENCE-REPORT.md');
 for (const needle of ['Launchframe Evidence Report', 'Package install', 'GitHub Pages HTTPS certificate']) {
   if (!evidenceReport.includes(needle)) failures.push(`evidence report missing expected content: ${needle}`);
+}
+
+const policyGate = readText('POLICY-LAUNCH-GATE.md');
+for (const needle of ['Required Before A Real Launch', 'support@example.com', 'TBD before real launch', 'Apache-2.0']) {
+  if (!policyGate.includes(needle)) failures.push(`policy launch gate missing expected placeholder: ${needle}`);
 }
 
 const security = readText('repo/SECURITY.md');
